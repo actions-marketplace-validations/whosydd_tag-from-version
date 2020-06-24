@@ -12,7 +12,7 @@ async function run(): Promise<void> {
     const ms: string = core.getInput('milliseconds')
     core.debug(`Waiting ${ms} milliseconds ...`)
 
-    core.debug(`package version: ${getPackageVersion()}`)
+    core.info(`package version: ${getPackageVersion()}`)
 
     core.debug(new Date().toTimeString())
 

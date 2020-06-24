@@ -358,7 +358,7 @@ function run() {
         try {
             const ms = core.getInput('milliseconds');
             core.debug(`Waiting ${ms} milliseconds ...`);
-            core.debug(`package version: ${getPackageVersion()}`);
+            core.info(`package version: ${getPackageVersion()}`);
             core.debug(new Date().toTimeString());
             core.setOutput('time', new Date().toTimeString());
         }
