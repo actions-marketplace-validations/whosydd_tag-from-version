@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
-  "version": "0.0.0",
+  "name": "tag-from-version",
+  "version": "0.1.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Github action that creates a tag from the package version",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -10,19 +10,18 @@
     "format-check": "prettier --check **/*.ts",
     "lint": "eslint src/**/*.ts",
     "pack": "ncc build",
-    "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run pack && npm test"
+    "all": "npm run build && npm run format && npm run lint && npm run pack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/suceda/tag-from-version.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "YourNameOrOrganization",
+  "author": "Sergi Uceda",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.0"
