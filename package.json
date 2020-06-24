@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Github action that creates a tag from the package version",
-  "main": "lib/main.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write **/*.ts",
