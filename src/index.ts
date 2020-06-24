@@ -1,6 +1,5 @@
 import * as fs from 'fs'
 import * as core from '@actions/core'
-import {wait} from './wait'
 
 const getPackageVersion = (): string => {
   const data = JSON.parse(fs.readFileSync('package.json', {encoding: 'utf-8'}))
@@ -15,8 +14,6 @@ async function run(): Promise<void> {
 
     core.debug(`package version: ${getPackageVersion()}`)
 
-    core.debug(new Date().toTimeString())
-    await wait(parseInt(ms, 10))
     core.debug(new Date().toTimeString())
 
     core.setOutput('time', new Date().toTimeString())
