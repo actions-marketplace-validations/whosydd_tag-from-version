@@ -1,6 +1,6 @@
-name: 'Tag from package version'
+name: 'Get tag from package version'
 description: 'Creates a tag from the package version'
-author: 'Sergi Uceda'
+author: 'whosydd'
 # inputs:
 #   myInput:              # change this
 #     description: 'input description here'
